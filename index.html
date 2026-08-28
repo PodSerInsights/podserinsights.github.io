@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#3b2113" />
+  <meta name="description" content="PodSer — Grandes perguntas. Diferentes perspectivas." />
+  <title>PodSer</title>
+  <style>
+    :root {
+      --bg1:#2a160d;
+      --bg2:#5a321d;
+      --gold:#e4bd7b;
+      --gold2:#f0d3a2;
+      --text:#f7efe4;
+      --muted:#d8c2aa;
+      --card:rgba(35,18,10,.58);
+      --line:rgba(228,189,123,.38);
+    }
+    * { box-sizing:border-box; }
+    html,body { margin:0; min-height:100%; }
+    body {
+      min-height:100vh;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(circle at 50% 10%, rgba(228,189,123,.14), transparent 30%),
+        linear-gradient(155deg, var(--bg2), var(--bg1) 55%, #170c07);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:28px 18px;
+    }
+    main {
+      width:min(100%, 560px);
+      text-align:center;
+    }
+    .card {
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:28px;
+      padding:34px 24px 28px;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      box-shadow:0 22px 70px rgba(0,0,0,.28);
+    }
+    .logo {
+      width:160px;
+      height:160px;
+      object-fit:cover;
+      border-radius:50%;
+      box-shadow:0 10px 34px rgba(0,0,0,.28);
+      margin-bottom:18px;
+    }
+    h1 {
+      margin:0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size:42px;
+      font-weight:500;
+      color:var(--gold2);
+      letter-spacing:.02em;
+    }
+    .tagline {
+      margin:10px auto 26px;
+      color:var(--muted);
+      font-size:16px;
+      line-height:1.5;
+      max-width:390px;
+    }
+    .links {
+      display:grid;
+      gap:14px;
+    }
+    a.button {
+      display:block;
+      text-decoration:none;
+      color:#2a160d;
+      background:linear-gradient(180deg, #f0d3a2, #d9ad69);
+      padding:16px 20px;
+      border-radius:16px;
+      font-weight:700;
+      font-size:17px;
+      letter-spacing:.01em;
+      box-shadow:0 8px 22px rgba(0,0,0,.18);
+      transition:transform .15s ease, filter .15s ease;
+    }
+    a.button:hover {
+      transform:translateY(-2px);
+      filter:brightness(1.04);
+    }
+    .secondary {
+      margin-top:22px;
+      font-size:13px;
+      color:#bda68e;
+    }
+    @media (max-width:480px) {
+      .card { padding:28px 18px 24px; }
+      .logo { width:138px; height:138px; }
+      h1 { font-size:36px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="card">
+      <img class="logo" src="podser-logo.png" alt="Logo PodSer" />
+      <h1>PodSer</h1>
+      <p class="tagline">Grandes perguntas. Diferentes perspectivas.<br>Um caminho de volta ao Ser.</p>
+
+      <div class="links">
+        <a class="button" href="https://youtu.be/qL-ywaQ-94Q" target="_blank" rel="noopener">Assistir no YouTube</a>
+        <a class="button" href="https://open.spotify.com/episode/3rGKz0ikz9jtxicgze5bX4?si=BLbx3dgdQKy-8IOHs9gBYw&utm_source=copy-link" target="_blank" rel="noopener">Ouvir no Spotify</a>
+      </div>
+
+      <p class="secondary">PodSer • Filosofia • espiritualidade • psicologia • ciência</p>
+    </section>
+  </main>
+</body>
+</html>
