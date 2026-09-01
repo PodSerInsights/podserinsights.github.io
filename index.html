@@ -48,15 +48,18 @@
       box-shadow:0 22px 70px rgba(0,0,0,.28);
     }
     .logo {
-      width:160px;
-      height:160px;
-      object-fit:cover;
-      border-radius:50%;
-      box-shadow:0 12px 40px rgba(0,0,0,.08);      margin-bottom:18px;
-    }
+  width:100%;
+  max-width:360px;
+  height:auto;
+  object-fit:contain;
+  border-radius:0;
+  box-shadow:none;
+  margin-bottom:18px;
+}    
     h1 {
   margin:0;
-  font-family: "Lora", Georgia, serif;
+  font-family: "Lora",
+    , serif;
   font-size:42px;
   font-weight:500;
   color:#22558C;
@@ -104,10 +107,9 @@
     }
     @media (max-width:480px) {
       .card { padding:28px 18px 24px; }
-      .logo { width:138px; height:138px; }
-      h1 { font-size:36px; }
-    }
-  </style>
+      .logo { width:100%; max-width:300px; height:auto; }
+h1 { font-size:36px; }
+}  </style>
 </head>
 <body>
   <main>
